@@ -1,0 +1,67 @@
+$font-stack:    'Karla', sans-serif;
+$primary-color: #5C3317;
+
+
+// TODO: format titles of posts and links
+// TODO: format dates
+// TODO: standardize distance between objects (x12px)
+// TODO: look up best line height
+// TODO: switch to dark background or greyer cream background
+
+
+
+html, body {
+    background: #FAF0E6;
+    color: $primary-color;
+    font-family: $font-stack;
+    margin: 0;
+}
+
+a {
+    color: #B13E0F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CD3700;
+}
+
+h1 {
+    font-family: $font-stack;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h1 .small {
+    font-weight: 400;
+    font-size: 80%;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    padding: 24px;
+}
+
+section.leader {
+    margin: 200px 0 200px 0;
+}
+
+ul {
+    list-style-type: none;
+    border-top: 6px solid #EDE4DA;
+    margin: 12px 0 0 0;
+    padding: 12px 0 0 0;
+}
+
+ul li {
+    font-family: $font-stack;
+    font-size: 18px;
+    color: #0C85AC;
+    padding: 5px;
+}
