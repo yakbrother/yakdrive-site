@@ -1,0 +1,43 @@
+<!DOCCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+        <link rel="stylesheet" href="/css/default.css">
+        <script src="https://use.fontawesome.com/585577ba2d.js"></script>
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	    <title>{% if page.title %}{{ page.title | escape }}{% else %}Yakdrive | Tim Eaton{% endif %}</title>
+    </head>
+
+    <body>
+
+             <div class="container">
+
+		     <section class="leader">
+			     <h1><a href="/">Tim Eaton</a></h1>
+			      <p>I'm a PHP developer from New Mexico, currently living in the wilds of Philadelphia. I work for <a href="http://www.nachi.org">InterNACHI</a>, an international trade organization based in Boulder, CO. </p>
+
+			     <ul>
+				     <li><a href="mailto:tim@yakdrive.io">tim (at) yakdrive.io <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+				     <li><a href="http://travel.yakbrother.com">travel archives <i class="fa fa-folder-open-o" aria-hidden="true"></i></a></li>
+				     <li><a href="http://twitter.com/yakbrother">@yakbrother <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				     <li><a href="http://github.com/yakbrother">github <i class="fa fa-github" aria-hidden="true"></i></a></li>
+				     <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">rss <i class="fa fa-rss" aria-hidden="true"></i></a></li>
+			     </ul>
+		     </section>
+
+             <section class="content">
+		         {{ content }}
+
+		         <div class="footer">
+			         Copyright &copy; 2017 Tim Eaton. Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+		         </div>
+
+		     </section>
+
+	     </div>
+
+    </body>
+</html>
+
