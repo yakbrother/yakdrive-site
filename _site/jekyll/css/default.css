@@ -32,11 +32,6 @@ section.leader h1 {
     padding-bottom: 0;
 }
 
-section.leader h1 a {
-    color: #5C3317;
-    text-decoration: none;
-}
-
 section.content h2 {
     font-size: 22px;
     margin-bottom: 36px;
@@ -73,7 +68,7 @@ section.content {
     max-width:70%;
 }
 
-.post-meta {
+span.post-meta {
     color: #8C705C;
     font-size: 14px;
     line-height: 25px;
@@ -84,7 +79,7 @@ div.footer {
     padding-bottom: 48px;
 }
 
-article {
+.post-list article {
     padding-bottom: 36px;
     border-bottom: 6px solid #EDE4DA;
     margin-bottom: 48px;
