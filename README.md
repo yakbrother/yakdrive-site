@@ -1,3 +1,3 @@
 # yakdrive-site
 
-This is a website repository for www.yakdrive.io. At the moment, it's just a static HTML holding page.
+This is a website repository for www.yakdrive.io. This is a trial version of using Jekyll for a blog, with a theme of my own design.

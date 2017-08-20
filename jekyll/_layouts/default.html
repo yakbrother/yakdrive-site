@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
         <link rel="stylesheet" href="/css/default.css">
         <script src="https://use.fontawesome.com/585577ba2d.js"></script>
-	<title>{{ page.title }} | Yakdrive</title>
+	    <title>{% if page.title %}{{ page.title | escape }}{% else %}Yakdrive | Tim Eaton{% endif %}</title>
     </head>
 
     <body>
