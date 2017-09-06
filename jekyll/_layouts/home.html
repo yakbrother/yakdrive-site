@@ -7,17 +7,16 @@ layout: default
 <div class="post-list">
     {% for post in site.posts %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-            <h2 style="margin-top: 0;">
-                {% if post.link %}
 
-		            <a class="post-link post-link-external" href="{{ post.link }}">{{ post.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
-
-		        {% else %}
-
-		            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-
-                {% endif %}
-	        </h2>
+            {% if post.title %}
+                <h2 style="margin-top: 0;">
+                    {% if post.link %}
+    		            <a class="post-link post-link-external" href="{{ post.link }}">{{ post.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
+    		        {% else %}
+    		            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    {% endif %}
+    	        </h2>
+            {% endif %}
 
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">{{ post.date | date: date_format }} | <a href="{{ post.url | relative_url }}">Permalink</a></span>
@@ -25,6 +24,9 @@ layout: default
 	        <div class="post-content" itemprop="articleBody">
 	            {{ post.content }}
 	        </div>
+            <div class="permalink">
+                <a class="post-link" href="{{ post.url }}"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+            </div>
         </article>
     {% endfor %}
 </div>
