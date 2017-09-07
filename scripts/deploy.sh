@@ -4,6 +4,6 @@ set -eux
 
 scp -r ./jekyll/_site/* yakdrive:/var/www/yakdrive.io
 
-scp ./config/nginx.conf yakdrive:/etc/nginx/sites-enabled/default
+# scp ./config/nginx.conf yakdrive:/etc/nginx/sites-enabled/default
 
-ssh yakdrive -- service nginx restart
+# ssh yakdrive -- service nginx restart
