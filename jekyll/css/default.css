@@ -5,7 +5,7 @@
 // TODO: switch to dark background or greyer cream background
 
 html, body {
-    background: #FAF0E6;
+    background-color: #FAF0E6;
     color: #5C3317;
     margin: 0;
 }
@@ -13,6 +13,7 @@ html, body {
 p, div, article, section, li, h1, h2, h3, h4 {
     font-family: 'Karla', sans-serif;
     color: #5C3317;
+    line-height: 25px;
 }
 
 a {
@@ -22,6 +23,14 @@ a {
 
 a:hover {
     color: #CD3700;
+}
+
+blockquote {
+    border-top: 1px dashed #D6C4B3;
+    border-bottom: 1px dashed #D6C4B3;
+    padding: 0px 12px;
+    background-color: #FFFCF8;
+    display: block;
 }
 
 section.leader h1 {
@@ -90,14 +99,14 @@ article {
     margin-bottom: 48px;
 }
 
-ul {
+section.leader ul {
     list-style-type: none;
     border-top: 6px solid #EDE4DA;
     margin: 12px 0 0 0;
     padding: 12px 0 0 0;
 }
 
-ul li {
+section.leader ul li {
     font-size: 14px;
     color: #0C85AC;
     padding: 12px;
